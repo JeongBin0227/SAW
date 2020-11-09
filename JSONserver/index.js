@@ -18,13 +18,14 @@ const renderPosts = async () => {
             src="${post.image}"
         />
         <div class="post_row">
-            <span> 좋아요 : ${post.like}</span>
-            <span> 댓글 : ${post.comment}</span>
+            <span> 좋아요 : ${post.likes}</span>
+            <span> 댓글 : ${post.comments}</span>
         </div>
     </div>
     `;
   });
   container.innerHTML = postTemplate;
+  console.log(postTemplate);
   console.log(posts);
 };
 
