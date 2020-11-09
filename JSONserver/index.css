@@ -12,7 +12,7 @@ body {
   background-color: gainsboro;
 }
 
-/* .nav {
+.nav {
   width: 100%;
   display: grid;
   border: 5px solid gainsboro;
@@ -21,17 +21,17 @@ body {
   gap: 5px;
 }
 
-.nav .nav__item {
+.nav .nav_item {
   padding: 15px 25px;
   display: flex;
   background-color: white;
   justify-content: space-between;
-} */
+}
 
 main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 400px);
+  grid-template-rows: repeat(5, 400px);
   height: 100%;
   gap: 5px;
   background-color: gainsboro;
