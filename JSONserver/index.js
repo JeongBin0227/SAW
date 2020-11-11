@@ -25,6 +25,7 @@ const renderPosts = async () => {
     `;
   });
   container.innerHTML = postTemplate;
+  test();
   console.log(postTemplate);
   console.log(posts);
 };
