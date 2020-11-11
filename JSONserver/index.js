@@ -9,10 +9,10 @@ const renderPosts = async () => {
   let postTemplate = '';
   posts.forEach((post) => {
     postTemplate += `
-    <div class="post">
+    <div class="post" id="${post.id}">
         <div class="post_row">
             <span>Title : ${post.title}  by ${post.author} </span>
-            <button>X</button>
+            <button class="delete-post">X</button>
         </div>
         <img
             src="${post.image}"
