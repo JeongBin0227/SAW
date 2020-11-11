@@ -12,7 +12,7 @@ const renderPosts = async () => {
     <div class="post">
         <div class="post_row">
             <span>Title : ${post.title}  by ${post.author} </span>
-            <button>X</button>
+            <button class="delete-post ">X</button>
         </div>
         <img
             src="${post.image}"
@@ -25,6 +25,7 @@ const renderPosts = async () => {
     `;
   });
   container.innerHTML = postTemplate;
+  test();
   console.log(postTemplate);
   console.log(posts);
 };
